@@ -1,0 +1,129 @@
+.fit-screen {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+}
+
+.sidebar {
+  
+  background-color: #5c4f4f;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.icon {
+  margin-right: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.input-group {
+
+  margin-bottom: 10px;
+  
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.main {
+  flex-grow: 1;
+  height: 100vh; /* Ensures the main content takes the full viewport height */
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+
+.search-button {
+  background-color: #28a745;
+}
+
+.saved-button {
+  background-color: #6c757d;
+}
+
+.nearby-bus-button {
+  background-color: #ffc107;
+}
+
+.nearby-stop-button {
+  background-color: #17a2b8;
+}
+
+.show-list-button {
+  background-color: #ff5733;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .fit-screen {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    width: 100%;
+  }
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+/* 
+.bottom{
+  position: absolute;
+  bottom: 20px; 
+  left: 0;
+  right: 0;
+
+} */
